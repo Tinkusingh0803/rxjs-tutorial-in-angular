@@ -1,0 +1,68 @@
+<h1>Retry, RetryWhen, Scan and Delay</h1>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-3">
+      <!-- <div class="table" *ngIf="person!=null"> -->
+      <tr>
+        <strong>Email</strong>
+        <p *ngFor="let item of person">{{item.email}}</p>
+      </tr>
+      <!-- </div> -->
+      </div>
+      <div class="col-md-2">
+      <!-- <div class="table" *ngIf="person!=null"> -->
+        <tr>
+          <strong>id</strong>
+          <p  *ngFor="let item of person">{{item.id}}</p>
+        </tr>
+        </div>
+        <!-- </div> -->
+        <div class="col-md-2">
+      <!-- <div class="table" *ngIf="person!=null"> -->
+
+          <tr>
+            <strong>name</strong>
+            <p   *ngFor="let item of person">{{item.name}}</p>
+          </tr>
+          </div>
+          <!-- </div> -->
+          <div class="col-md-2">
+      <!-- <div class="table" *ngIf="person!=null"> -->
+
+            <tr>
+              <strong>phone</strong>
+              <p  *ngFor="let item of person">{{item.phone}}</p>
+            </tr>
+            </div>
+            <!-- </div> -->
+            <div class="col-md-2">
+
+              <tr>
+                <strong>username</strong>
+        <p  *ngFor="let item of person">{{item.username}}</p>
+              </tr>
+
+    </div>
+    <div class="col-md-1">
+
+      <tr>
+        <strong>website</strong>
+<p  *ngFor="let item of person">{{item.website}}</p>
+      </tr>
+
+</div>
+  </div>
+   <button class="btn btn-primary" type="button" (click)="fetchObject()">
+    <span *ngIf="fetching" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+    {{fetching ? 'fetching...' : 'fetch details'}}
+   </button>
+   <br>
+   <p>
+     status <strong [ngClass]="{
+       'text-success': noData == 'data fetched',
+     'text-danger': noData == 'data problem fetch' }" > {{noData}}  </strong>
+   </p>
+</div>
+

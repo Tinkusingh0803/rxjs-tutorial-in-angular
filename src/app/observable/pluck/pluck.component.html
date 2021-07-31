@@ -1,0 +1,37 @@
+<h1>pluck</h1>
+ <br>
+<div class="row">
+  <div class="col-md-6">
+    <strong>Ex - 01</strong>
+    <hr>
+    <p class="bg-light py-2 px-3 border rounded">
+      <strong>pluck</strong> by property
+    </p>
+    <br>
+    <table>
+      <tr>
+        <th>Name</th>
+      </tr>
+      <tr>
+        <td *ngFor="let item of store">{{item}}</td>
+      </tr>
+    </table>
+    <!-- <p>Message <strong class="text-success"> </strong> </p> -->
+  </div>
+  <div class="col-md-6">
+    <strong>Ex - 02</strong>
+    <hr>
+    <p class="bg-light py-2 px-3 border rounded">
+      <strong>pluck</strong> pluck by nested property
+    </p>
+    <br>
+    <table>
+      <tr>
+        <th>Name</th>
+      </tr>
+      <tr>
+        <td *ngFor="let item1 of store1">{{item1}}</td>
+      </tr>
+    </table>
+    <!-- <p>Message <strong class="text-success"> </strong></p> -->
+  </div>

@@ -1,0 +1,19 @@
+li{
+  list-style-type: none;
+  /* position: fixed; */
+  /* top: 40%; */
+  /* padding: 5%; */
+
+  /* padding-left: 40px; */
+  margin: 20px;
+
+}
+ul{
+   background-color: antiquewhite;
+   /* border: 2px solid black; */
+  display: flex;
+ }
+li a{
+  text-decoration: none  ;
+
+}
